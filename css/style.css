@@ -1,70 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 *{
     margin: 0;
     padding: 0;   
 }
 
-
+/* ------------------------------------------------------------------------------------------------ */
 /* estilo HOME */
 
-header{
-    background-color: #f1f1f1;
-    padding-left: 25px;
-    padding-top: 15px;
-    display: flex;
-    flex-direction: row;
-}
-
-.logo{
-    margin-bottom: 1%;
-}
-
-nav {
-    position: relative;
-    left: 5%;
-    bottom: 3%;
-}
-
+/* NAVBAR */
 a {
     text-decoration: none;
     color: rgb(58, 58, 58);
-    margin-left: 180px;
+    margin-left: 140px;
 }
-
-ul {
-    list-style: none;
-}
-
-li {
-    /* color: #0e0e0e; */
-    display: inline-block;
+.navbar-nav{
     width: 18%;
-    /* position: relative; */
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     text-transform: uppercase;
-    margin-right: 0;
-    margin-top: 5.5%;
+}
+.nav-link:hover{
+    font-weight: 600;
 }
 
-
-.home:hover{
-    font-weight: bold;
-}
-.productos:hover{
-    font-weight: bold;
-}
-.servicios:hover{
-    font-weight: bold;
-}
-.nosotros:hover{
-    font-weight: bold;
-}
-
-
-
+/* PARALLAX */
 .parallax {
     background-image: url("../assets/cuadros.jpg");
     height: 500px;
@@ -82,32 +44,26 @@ li {
 }
 .parallax h2{
 	font-family:'Montserrat', sans-serif;
-	font-size: 1,9em;
+	font-size: 175%;
 	font-weight: 600;
 	font-style: normal;
     color: #5e5e5e;
     text-align: center;
-    margin-top: 13em;
+    margin-top: 12em;
     text-transform: uppercase;
 }
 .parallax h3{
     font-family:'Montserrat', sans-serif;
-	font-size: 1,3em;
+	font-size: 1em;
 	font-weight: 450;
 	font-style: normal;
     color: #474747;
     text-align: center;
     text-transform: uppercase;
 }
-
-/* .parallax .boton__principal{
-    background-color: #474747;
-    color: #f1f1f1;
-    border: #f1f1f1;
-} */
-
 .boton__principal:hover{
     font-weight: bold;
+    color: #f1f1f1;
 }
 
 
@@ -129,6 +85,7 @@ li {
 	font-style: normal;
     color: #0e0e0e;
     margin-left: 3%;
+    margin-bottom: 0;
 }
 
 
@@ -160,12 +117,10 @@ li {
     margin-left: 3%;
     text-transform: uppercase;
 }
-/* .opciones .boton__secundario{
-    color: #f1f1f1;
-    background-color: #474747;
-} */
+
 .boton__secundario:hover{
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 600;
     background-color: #dbdbdb;
 }
 
@@ -178,38 +133,52 @@ li {
     justify-content: space-around;
 }
 
+/* --------------------------------------------------------------------------------------------------- */
+/* FOOTER */
 
 footer{
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-weight: 300;
     text-align: center;
     margin-top: 5%;
 }
 footer h6{
     text-transform: none;
     font-weight: normal;
-    margin-top: 5px;
+    font-size: 12px;
+    margin-top: 9px;
+    color: #707070;
 }
 footer .contacto{
     background-color: #f1f1f1;
-    padding: 20px;
     margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
-    margin-top: 5%;
     margin-left: 0%;
 }
 .contacto:hover{
     font-weight: bold;
+    color: #5e5e5e;
+}
+.pers{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-top-color: #dbdbdb;
+    border-top-width: 0.3px;
+    border-top-style: solid;
+    margin-bottom: 0%;
+    margin-top: 8px;
+    padding-top: 5px;
 }
 
 
-
+/* ------------------------------------------------------------------------------------------------ */
 /* estilo PRODUCTOS y SERVICIOS */
 
 .prod__serv__opciones h6{
@@ -271,7 +240,7 @@ footer .contacto{
 }
 
 
-
+/* ------------------------------------------------------------------------------------------------ */
 /* estilo NOSOTROS */
 
 .nosotros h6{
@@ -291,9 +260,10 @@ footer .contacto{
 	font-style: normal;
     color: #0e0e0e;
     margin-left: 3%;
+    margin-bottom: 0;
 }
 .present{
-    margin-top: 1%;
+    margin-top: 3%;
     margin-bottom: 1.5%;
 }
 /* .nosotros h5{
@@ -320,6 +290,7 @@ footer .contacto{
     width: 70%;
     height: auto;
     margin-left: 22%;
+    margin-top: 5%;
 }
 
 .sobre__nos{
@@ -329,8 +300,7 @@ footer .contacto{
     grid-template-columns: 40% 60%;
 }
 
-
-
+/* ------------------------------------------------------------------------------------------------ */
 /* estilo CONTACTO */
 
 .contacto h6{
@@ -350,7 +320,7 @@ footer .contacto{
 	font-style: normal;
     color: #0e0e0e;
     margin-left: 3%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .formulario{
@@ -360,10 +330,15 @@ footer .contacto{
 	font-style: normal;
     color: #0e0e0e;
     margin-left: 3%;
-    margin-top: 5%;
+    margin-top: 0%;
+    margin-right: 20%;
     margin-bottom: 5%;
 }
-
+.btn-primary{
+    color: #474747;
+    background-color: #dbdbdb;
+    border-color: #f1f1f1;
+}
 .rrss{
     font-family:'Montserrat', sans-serif;
 	font-size: 22px;
@@ -375,7 +350,7 @@ footer .contacto{
 }
 
 
-
+/* ------------------------------------------------------------------------------------------------ */
 /*grid areas*/ /*RESPONSIVO*/
 
 
@@ -423,28 +398,26 @@ footer .contacto{
         "serv"
         "foot";
     }
-    header{
+    /* header{
         background-color: #f1f1f1;
         padding-left: 25px;
         padding-top: 15px;
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
+    } */
     /* body{
         background-color: yellow;
     } */
-    .logo{
+    /* .logo{
         margin-bottom: 4%;
-        /* margin-left: 15%; */
-    }
-    ul{
+    } */
+    /* ul{
         display: flex;
         flex-direction: column;
-        /* margin-left: 30%;*/
         margin-top: 15%;
-    }
-    li {
+    } */
+    /* li {
         color: #0e0e0e;
         display: inline-block;
         width: auto;
@@ -455,10 +428,10 @@ footer .contacto{
         text-transform: uppercase;
         margin-right: 0;
         margin-top: 3%;
-    }
-    li a{
+    } */
+    /* li a{
         margin-left: 0px;
-    }
+    } */
     .opciones{
         flex-direction: column;
     }
