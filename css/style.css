@@ -1,5 +1,66 @@
+/* NAVBAR */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;800;900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+.logo {
+  margin-left: 1.5%; }
+
+.navbar-nav {
+  width: 18%;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+  .navbar-nav .nav-link {
+    text-decoration: none;
+    color: #3a3a3a;
+    margin-left: 60%; }
+    .navbar-nav .nav-link:hover {
+      font-weight: 600; }
+
+/* FOOTER */
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5%; }
+  footer .contacto {
+    text-decoration: none;
+    color: #3a3a3a;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 0%; }
+    footer .contacto:hover {
+      font-weight: bold; }
+  footer .redes {
+    color: #3a3a3a;
+    font-size: 1.3em; }
+    footer .redes:hover {
+      color: #005757; }
+  footer .pers {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-top-color: #dbdbdb;
+    border-top-width: 0.3px;
+    border-top-style: solid;
+    margin-bottom: 0%;
+    margin-top: 8px;
+    padding-top: 5px; }
+    footer .pers .logo__footer {
+      text-decoration: none; }
+    footer .pers h6 {
+      text-transform: none;
+      font-weight: normal;
+      font-size: 12px;
+      margin-top: 9px;
+      color: #707070; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -11,24 +72,6 @@
   padding: 0; }
 
 /* NAVBAR */
-.logo {
-  margin-left: 1.5%; }
-
-.nav-link {
-  text-decoration: none;
-  color: #3a3a3a;
-  margin-left: 60%; }
-
-.navbar-nav {
-  width: 18%;
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
-  text-transform: uppercase; }
-
-.nav-link:hover {
-  font-weight: 600; }
-
 /* PARALLAX */
 .parallax {
   background-image: url("../assets/cuadros.jpg");
@@ -43,21 +86,21 @@
   margin-bottom: 0px; }
 
 .parallax h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 175%;
   font-weight: 600;
   font-style: normal;
-  color: #5e5e5e;
+  color: #005757;
   text-align: center;
   margin-top: 12em;
   text-transform: uppercase; }
 
 .parallax h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 450;
   font-style: normal;
-  color: #474747;
+  color: #005757;
   text-align: center;
   text-transform: uppercase; }
 
@@ -66,7 +109,7 @@
   color: #f1f1f1; }
 
 .presentacion h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 400;
   font-style: normal;
@@ -76,7 +119,7 @@
   margin-bottom: 1%; }
 
 .presentacion h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
@@ -85,7 +128,7 @@
   margin-bottom: 0; }
 
 .opciones h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 600;
   font-style: normal;
@@ -95,7 +138,7 @@
   margin-bottom: 0,5%; }
 
 .opciones p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 450;
   font-style: normal;
@@ -105,7 +148,7 @@
 
 .opciones .boton__secundario {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 300;
   font-style: normal;
@@ -125,60 +168,11 @@
   flex-direction: row;
   justify-content: space-around; }
 
-/* --------------------------------------------------------------------------------------------------- */
 /* FOOTER */
-footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-  margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 5%; }
-
-footer h6 {
-  text-transform: none;
-  font-weight: normal;
-  font-size: 12px;
-  margin-top: 9px;
-  color: #707070; }
-
-footer .contacto {
-  text-decoration: none;
-  color: #3a3a3a;
-  margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-weight: normal;
-  margin-left: 0%; }
-
-.contacto:hover {
-  font-weight: bold;
-  color: #5e5e5e; }
-
-.pers {
-  display: flex;
-  column-gap: 5px;
-  align-items: center;
-  justify-content: center;
-  border-top-color: #dbdbdb;
-  border-top-width: 0.3px;
-  border-top-style: solid;
-  margin-bottom: 0%;
-  margin-top: 8px;
-  padding-top: 5px; }
-
-.redes {
-  color: #3a3a3a;
-  font-size: 1.3em; }
-
-.logo__footer {
-  text-decoration: none; }
-
 /* ------------------------------------------------------------------------------------------------ */
 /* estilo PRODUCTOS y SERVICIOS */
 .prod__serv__opciones h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 600;
   font-style: normal;
@@ -188,7 +182,7 @@ footer .contacto {
   margin-bottom: 1%; }
 
 .prod__serv__opciones p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 450;
   font-style: normal;
@@ -196,7 +190,7 @@ footer .contacto {
   margin-left: 3%; }
 
 .prod__serv__opciones h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -207,7 +201,7 @@ footer .contacto {
   margin-top: 8%; }
 
 .prod__serv__opciones h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
@@ -235,7 +229,7 @@ footer .contacto {
 /* ------------------------------------------------------------------------------------------------ */
 /* estilo NOSOTROS */
 .nosotros h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 600;
   font-style: normal;
@@ -245,7 +239,7 @@ footer .contacto {
   margin-bottom: 1%; }
 
 .nosotros p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 450;
   font-style: normal;
@@ -257,7 +251,7 @@ footer .contacto {
   margin-top: 3%; }
 
 .historia p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   font-weight: 450;
   font-style: normal;
@@ -281,7 +275,7 @@ footer .contacto {
 /* ------------------------------------------------------------------------------------------------ */
 /* estilo CONTACTO */
 .contacto h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
   font-weight: 600;
   font-style: normal;
@@ -291,7 +285,7 @@ footer .contacto {
   margin-bottom: 1%; }
 
 .contacto p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 450;
   font-style: normal;
@@ -300,7 +294,7 @@ footer .contacto {
   margin-bottom: 3%; }
 
 .formulario {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -315,8 +309,11 @@ footer .contacto {
   background-color: #dbdbdb;
   border-color: #f1f1f1; }
 
+.btn-primary:hover {
+  background-color: #005757; }
+
 .rrss {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 450;
   font-style: normal;
@@ -401,7 +398,5 @@ footer .contacto {
     }
     body{
         background-color: red;
-    }
-        
-    
+    }        
 } */
