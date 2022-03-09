@@ -1,5 +1,5 @@
 /* FOOTER */
-$color-text: rgb(0, 87, 87);
+$color-text: #005757;
 $font: 'Montserrat', sans-serif;
 
 footer{
@@ -12,7 +12,10 @@ footer{
     margin-top: 5%;
     .contacto{
         text-decoration: none;
-        color: #3a3a3a;
+        background-color: rgba($color: #005757, $alpha: 0.4);
+        border-radius: 5%;
+        padding: 0.2% 1% 0.2% 1%;
+        color: #f1f1f1;
         margin-bottom: 0;
         font-family: $font;
         text-transform: uppercase;

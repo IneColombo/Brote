@@ -28,7 +28,10 @@ footer {
   margin-top: 5%; }
   footer .contacto {
     text-decoration: none;
-    color: #3a3a3a;
+    background-color: rgba(0, 87, 87, 0.4);
+    border-radius: 5%;
+    padding: 0.2% 1% 0.2% 1%;
+    color: #f1f1f1;
     margin-bottom: 0;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
@@ -354,9 +357,6 @@ footer {
 .presentacion {
   grid-area: pres; }
 
-/*.opciones{
-    grid-area: prod;
-}*/
 .productos {
   grid-area: prod; }
 
