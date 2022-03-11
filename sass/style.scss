@@ -274,11 +274,48 @@ $font: 'Montserrat', sans-serif;
 /* ------------------------------------------------------------------------------------------------ */
 /* estilo CONTACTO */
 
+// MAPS
+$redes:( 
+    ig: #ac00a4a2,
+    fb: #0000ffbd,
+    wa: #03a04ab9,
+);
+@each $red, $color in $redes{
+    .bot--#{$red}{
+        background-color: $color;
+        padding: 0.3% 1% 0.5% 1%;
+        border-radius: 10%;
+        color: #f1f1f1;
+    }
+}
+.bot{
+    margin-left: 1%;
+    border-color: #f1f1f1
+}
+// EXTEND
+.bot--ig{
+    @extend .bot;
+    margin-left: 3%;
+}
+.bot--fb{
+    @extend .bot;
+}
+.bot--wa{
+    @extend .bot;
+}
+// MIXIN
+@mixin size ($size, $weight, $style){
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+}
+
 .contacto h6{
     font-family: $font;
-	font-size: 2em;
-	font-weight: 600;
-	font-style: normal;
+    @include size (2em, 600, normal);
+	// font-size: 2em;
+	// font-weight: 600;
+	// font-style: normal;
     color: #0e0e0e;
     margin-left: 3%;
     margin-top: 5%;
@@ -286,9 +323,10 @@ $font: 'Montserrat', sans-serif;
 }
 .contacto p{
     font-family: $font;
-	font-size: 18px;
-	font-weight: 450;
-	font-style: normal;
+    @include size (18px, 450, normal);
+	// font-size: 18px;
+	// font-weight: 450;
+	// font-style: normal;
     color: #0e0e0e;
     margin-left: 3%;
     margin-bottom: 3%;
@@ -296,9 +334,10 @@ $font: 'Montserrat', sans-serif;
 
 .formulario{
     font-family: $font;
-	font-size: 14px;
-	font-weight: 400;
-	font-style: normal;
+    @include size (14px, 400, normal);
+	// font-size: 14px;
+	// font-weight: 400;
+	// font-style: normal;
     color: #0e0e0e;
     margin-left: 3%;
     margin-top: 0%;
@@ -312,15 +351,6 @@ $font: 'Montserrat', sans-serif;
 }
 .btn-primary:hover{
     background-color: $color-text;
-}
-.rrss{
-    font-family: $font;
-	font-size: 22px;
-	font-weight: 450;
-	font-style: normal;
-    color: #0e0e0e;
-    margin-left: 3%;
-    margin-bottom: 10%;
 }
 
 
