@@ -223,9 +223,10 @@ footer {
 
 .videos {
   display: grid;
-  grid-template-columns: repeat(2, 0.5fr);
+  grid-template-columns: repeat(2, 1fr);
   padding: 0 3% 0 3%;
-  grid-gap: 10px; }
+  grid-gap: 10px;
+  justify-items: center; }
 
 .galeria {
   display: grid;
